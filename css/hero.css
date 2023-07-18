@@ -1,0 +1,36 @@
+.build .container {
+  height: 816px;
+  position: relative;
+  padding-top: 119px;
+  padding-left: 222px;
+}
+
+.build-img {
+  width: 990px;
+  height: 990px;
+  position: absolute;
+  bottom: 0;
+  left: -222px;
+}
+
+.build-header {
+  width: 1109px;
+  height: 320px;
+  font-family: Arial;
+  font-size: 160px;
+  font-weight: 900;
+  line-height: 160px;
+  letter-spacing: 7px;
+  color: #CFCFCD;
+}
+
+.build-description {
+  position: absolute;
+  right: 0;
+  top: 358px;
+  width: 587px;
+}
+
+.build-description__text {
+  margin-bottom: 14px;
+}

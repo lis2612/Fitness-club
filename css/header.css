@@ -17,7 +17,3 @@
 .header-menu {
   display: flex;
 }
-
-.header-menu__item {
-  text-transform: uppercase;
-}
