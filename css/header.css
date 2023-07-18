@@ -1,0 +1,23 @@
+.header {
+  height: 140px;
+  padding: 30px 0 10px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 182px;
+  height: 100px;
+}
+
+.header-menu {
+  display: flex;
+}
+
+.header-menu__item {
+  text-transform: uppercase;
+}
