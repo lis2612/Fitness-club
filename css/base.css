@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
 
-.background {
-  background: linear-gradient(180deg, #EBEBE9 0%, #EDEDEB 100%);
-}
-
 .container {
   width: 1400px;
   height: 100%;

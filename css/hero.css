@@ -1,5 +1,6 @@
-.build{
+.build {
   height: 816px;
+  background: linear-gradient(180deg, #EBEBE9 0%, #EDEDEB 100%);
 }
 
 .build .container {
