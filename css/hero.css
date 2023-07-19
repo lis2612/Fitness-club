@@ -1,7 +1,7 @@
 .build .container {
   height: 816px;
   position: relative;
-  padding-top: 119px;
+  padding-top: 100px;
   padding-left: 222px;
 }
 
@@ -31,6 +31,7 @@
   width: 587px;
 }
 
-.build-description__text {
-  margin-bottom: 14px;
+.build-description__link {
+  display: block;
+  margin-top: 14px;
 }
