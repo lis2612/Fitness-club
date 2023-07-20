@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+
+.container {
+  width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.heading {
+  font-family: Arial;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 90px;
+}
+
+.second-heading {
+  font-family: Arial;
+  font-size: 45px;
+  font-weight: 900;
+  letter-spacing: 2.25px;
+}
+
+.main-text {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #000;
+}
+
+.link {
+  height: 45px;
+  padding: 11px 32px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #292929;
+  text-transform: uppercase;
+}
+
+.link:hover {
+  color: #FF8340;
+}
+
+.link:active {
+  color: #843500;
+}

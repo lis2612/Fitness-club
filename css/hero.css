@@ -1,0 +1,41 @@
+.build {
+  height: 816px;
+  background: linear-gradient(180deg, #EBEBE9 0%, #EDEDEB 100%);
+}
+
+.build .container {
+  position: relative;
+  padding-top: 100px;
+  padding-left: 222px;
+}
+
+.build-img {
+  width: 990px;
+  height: 990px;
+  position: absolute;
+  bottom: 0;
+  left: -222px;
+}
+
+.build-header {
+  width: 1109px;
+  height: 320px;
+  font-family: Arial;
+  font-size: 160px;
+  font-weight: 900;
+  line-height: 160px;
+  letter-spacing: 7px;
+  color: #CFCFCD;
+}
+
+.build-description {
+  position: absolute;
+  right: 32px;
+  top: 358px;
+  width: 587px;
+}
+
+.build-description__link {
+  display: inline-block;
+  margin-top: 14px;
+}
