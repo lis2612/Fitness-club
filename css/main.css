@@ -3,39 +3,32 @@
   background: linear-gradient(180deg, #EBEBE9 0%, #EDEDEB 100%);
 }
 
-.build .container {
-  position: relative;
-  padding-top: 100px;
-  padding-left: 222px;
-}
-
-.build-img {
+.build__image {
+  position: absolute;
   width: 990px;
   height: 990px;
-  position: absolute;
   bottom: 0;
   left: -222px;
+  z-index: 1;
 }
 
-.build-header {
-  width: 1109px;
+.build__title {
+  position: relative;
+  top: 100px;
+  left: 222px;
+  max-width: 1120px;
   height: 320px;
   font-family: Arial;
   font-size: 160px;
   font-weight: 900;
   line-height: 160px;
-  letter-spacing: 7px;
+  letter-spacing: 8px;
   color: #CFCFCD;
 }
 
-.build-description {
+.build__description {
   position: absolute;
   right: 32px;
   top: 358px;
   width: 587px;
-}
-
-.build-description__link {
-  display: inline-block;
-  margin-top: 14px;
 }

@@ -4,9 +4,14 @@
 }
 
 .container {
-  width: 1400px;
+  max-width: 1400px;
+  min-width: 1000px;
   height: 100%;
   margin: 0 auto;
+}
+
+.container_relative {
+  position: relative;
 }
 
 .title {
@@ -36,6 +41,7 @@
 }
 
 .link {
+  display: inline-block;
   height: 45px;
   padding: 11px 32px;
   font-family: Roboto;
@@ -52,4 +58,8 @@
 
 .link:active {
   color: #843500;
+}
+
+.link_margin-top_14px{
+  margin-top: 14px;
 }
