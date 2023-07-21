@@ -6,8 +6,12 @@
 
 .header__nav {
   position: relative;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
+}
+
+.header__menu{
+  justify-content: end;
 }
