@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+.logo {
+  width: 182px;
+  height: 100px;
+}
 
 .container {
   width: 1400px;
@@ -6,26 +9,30 @@
   margin: 0 auto;
 }
 
-.heading {
+.title {
   font-family: Arial;
   font-size: 80px;
   font-weight: 900;
   line-height: 90px;
 }
 
-.second-heading {
+.subtitle {
   font-family: Arial;
   font-size: 45px;
   font-weight: 900;
   letter-spacing: 2.25px;
 }
 
-.main-text {
+.text {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 2px;
   color: #000;
+}
+
+.menu {
+  display: flex;
 }
 
 .link {

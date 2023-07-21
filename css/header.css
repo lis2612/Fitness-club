@@ -9,12 +9,3 @@
   justify-content: space-between;
   align-items: center;
 }
-
-.header-logo {
-  width: 182px;
-  height: 100px;
-}
-
-.header-menu {
-  display: flex;
-}
