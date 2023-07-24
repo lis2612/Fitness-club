@@ -10,35 +10,25 @@
     <title>Fitness club</title>
     <link
       rel="stylesheet"
-      href="css/reset.css"
-    >
-    <link
-      rel="stylesheet"
-      href="css/base.css"
-    >
-    <link
-      rel="stylesheet"
-      href="css/header.css"
-    >
-    <link
-      rel="stylesheet"
-      href="css/hero.css"
+      href="css/style.css"
     >
   </head>
 
   <body>
 
-    <header class="header ">
-      <nav class="header-nav container">
-        <img
-          src="/img/logo.png"
-          alt="logo"
-          class="header-logo"
-        >
-        <ul class="header-menu">
+    <header class="header">
+      <nav class="header__nav container">
+        <a href="#">
+          <img
+            class="logo"
+            src="/img/logo.png"
+            alt="logo"
+          >
+        </a>
+        <ul class="header__menu menu">
           <li>
             <a
-              class="header-menu__item link"
+              class="link"
               href="#"
             >
               о нас
@@ -46,7 +36,7 @@
           </li>
           <li>
             <a
-              class="header-menu__item link"
+              class="link"
               href="#"
             >
               тренеры
@@ -54,7 +44,7 @@
           </li>
           <li>
             <a
-              class="header-menu__item link"
+              class="link"
               href="#"
             >
               абонементы
@@ -62,7 +52,7 @@
           </li>
           <li>
             <a
-              class="header-menu__item link"
+              class="link"
               href="#"
             >
               контакты
@@ -72,28 +62,75 @@
       </nav>
     </header>
 
-    <section class="build">
-      <div class="container">
+    <main class="build">
+      <div class="container container_relative">
         <img
+          class="build__image"
           src="/img/build-image.png"
           alt=""
-          class="build-img"
         >
-        <h1 class="build-header">
+        <h1 class="build__title">
           ПОСТРОЙ СВОЕ ТЕЛО
         </h1>
-        <p class="build-description main-text">
+        <p class="build__description text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           <a
-            class="build-description__link link"
+            class="link link_margin-top_14px"
             href="#"
           >
             ЧИТАТЬ ДАЛЕЕ
           </a>
         </p>
-
       </div>
-    </section>
+    </main>
+
+    <footer class="footer">
+      <nav class="footer__nav container">
+        <ul class="footer__menu menu">
+          <li>
+            <a
+              class="link"
+              href="#"
+            >
+              о нас
+            </a>
+          </li>
+          <li>
+            <a
+              class="link"
+              href="#"
+            >
+              тренеры
+            </a>
+          </li>
+          <li>
+            <a
+              class="link"
+              href="#"
+            >
+              абонементы
+            </a>
+          </li>
+          <li>
+            <a
+              class="link"
+              href="#"
+            >
+              контакты
+            </a>
+          </li>
+        </ul>
+        <div class="footer__wrapper">
+
+          <span class="footer__developer text">
+            blvckdesign
+          </span>
+          <span class="footer__year text">
+            2023
+          </span>
+        </div>
+      </nav>
+    </footer>
   </body>
 
 </html>

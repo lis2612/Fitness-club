@@ -4,17 +4,14 @@
   background-color: #EBEBE9;
 }
 
-.header-nav {
+.header__nav {
+  position: relative;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header-logo {
-  width: 182px;
-  height: 100px;
-}
-
-.header-menu {
-  display: flex;
+.header__menu{
+  justify-content: end;
 }
