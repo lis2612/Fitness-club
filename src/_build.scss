@@ -1,0 +1,40 @@
+/* Styles for build section  */
+
+.build {
+  height: 816px;
+  background: linear-gradient(180deg, #ebebe9 0%, #ededeb 100%);
+
+  &__image {
+    position: absolute;
+    width: 990px;
+    height: 990px;
+    bottom: 0;
+    left: -222px;
+    z-index: 1;
+  }
+
+  &__title {
+    position: relative;
+    top: 100px;
+    left: 222px;
+    max-width: 1120px;
+    height: 320px;
+    font-family: Arial;
+    font-size: 160px;
+    font-weight: 900;
+    line-height: 160px;
+    letter-spacing: 8px;
+    color: #cfcfcd;
+  }
+
+  &__description {
+    position: absolute;
+    right: 32px;
+    top: 358px;
+    width: 587px;
+  }
+
+  &__button-more {
+    margin-top: 14px;
+  }
+}

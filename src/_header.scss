@@ -1,0 +1,19 @@
+/* Styles for header  */
+
+.header {
+  height: 140px;
+  padding: 30px 0 10px 0;
+  background-color: #ebebe9;
+
+  &__nav {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu {
+    justify-content: end;
+  }
+}

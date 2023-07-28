@@ -1,3 +1,5 @@
+/* Basic styles for reusable elements  */
+
 .logo {
   width: 182px;
   height: 100px;
@@ -8,10 +10,10 @@
   min-width: 1000px;
   height: 100%;
   margin: 0 auto;
-}
 
-.container_relative {
-  position: relative;
+  &_relative {
+    position: relative;
+  }
 }
 
 .title {
@@ -50,16 +52,12 @@
   letter-spacing: 2px;
   color: #292929;
   text-transform: uppercase;
-}
 
-.link:hover {
-  color: #FF8340;
-}
+  &:hover {
+    color: #ff8340;
+  }
 
-.link:active {
-  color: #843500;
-}
-
-.link_margin-top_14px{
-  margin-top: 14px;
+  &:active {
+    color: #843500;
+  }
 }
