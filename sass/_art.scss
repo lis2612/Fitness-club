@@ -3,8 +3,8 @@
 
   &__image {
     position: absolute;
-    top: 377px;
-    left: 600px;
+    bottom: 0;
+    right:-155px;
     width: 953px;
     height: 596px;
   }
@@ -27,5 +27,40 @@
 
   &__button-more {
     margin-top: 14px;
+  }
+
+  @media screen and (max-width: 1350px) {
+    &__title {
+      font-size: 5.95vw;
+    }
+  }
+
+  @media screen and (max-width: 952px) {
+    height: 817px;
+
+    &__image {
+      height: 374px;
+      width: 598px;
+      right: 0;
+    }
+
+    &__title {
+      top: 54px;
+      left: 32px;
+      max-width: 562px;
+      font-size: 60px;
+      line-height: 70px;
+    }
+
+    &__description {
+      top: 10px;
+      left: 111px;
+      padding: 276px 15px 14px;
+      width: 504px;
+    }
+
+    &__button-more {
+      margin-top: 36px;
+    }
   }
 }
