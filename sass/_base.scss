@@ -7,12 +7,17 @@
 
 .container {
   max-width: 1400px;
-  min-width: 1000px;
+  min-width: 300px;
   height: 100%;
   margin: 0 auto;
 
   &_relative {
     position: relative;
+  }
+
+  @media screen and (max-width:952px) {
+    max-width: 952px;
+
   }
 }
 
@@ -41,6 +46,8 @@
 .menu {
   display: flex;
 }
+
+
 
 .link {
   display: inline-block;

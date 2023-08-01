@@ -16,4 +16,26 @@
   &__menu {
     justify-content: end;
   }
+
+  @media screen and (max-width: 952px) {
+    height: 80px;
+    padding: 16px 32px 0;
+    &__menu {
+      display: none;
+    }
+
+    &__logo {
+      height: 64px;
+      width: 117px;
+    }
+    &__nav {
+      align-items:normal;
+      &:after {
+        content: url('/img/burger.svg');
+        display: block;
+        height: 48px;
+        width: 48px;
+      }
+    }
+  }
 }
