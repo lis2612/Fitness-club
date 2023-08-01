@@ -1,0 +1,28 @@
+.art {
+  height: 973px;
+}
+.art__image {
+  position: absolute;
+  top: 377px;
+  left: 600px;
+  width: 953px;
+  height: 596px;
+}
+.art__title {
+  position: absolute;
+  top: 169px;
+  left: 0;
+  max-width: 1324px;
+  z-index: 1;
+}
+.art__description {
+  position: absolute;
+  top: 66px;
+  left: 200px;
+  width: 562px;
+  padding: 335px 15px 46px;
+  border: 6px solid #FF8340;
+}
+.art__button-more {
+  margin-top: 14px;
+}

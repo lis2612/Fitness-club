@@ -15,9 +15,8 @@
     position: relative;
   }
 
-  @media screen and (max-width:952px) {
+  @media screen and (max-width: 952px) {
     max-width: 952px;
-
   }
 }
 
@@ -47,10 +46,9 @@
   display: flex;
 }
 
-
-
 .link {
-  display: inline-block;
+  display: flex;
+  width: fit-content;
   height: 45px;
   padding: 11px 32px;
   font-family: 'Roboto Medium', 'Tahoma', sans-serif;
