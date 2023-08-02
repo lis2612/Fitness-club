@@ -150,6 +150,7 @@ body {
   font-size: 80px;
   font-weight: 900;
   line-height: 90px;
+  color: #292929;
 }
 .title_white {
   color: #FFF;
@@ -160,6 +161,7 @@ body {
   font-size: 45px;
   font-weight: 900;
   letter-spacing: 2.25px;
+  color: #292929;
 }
 
 .text {
@@ -433,9 +435,31 @@ body {
   height: 6px;
   background: #292929;
 }
+@media screen and (max-width: 1399px) {
+  .feedback {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (max-width: 952px) {
+  .feedback {
+    min-height: 781px;
+    height: max-content;
+    padding: 32px 32px 21px;
+  }
+  .feedback__title {
+    padding: 6.5px 0;
+    font-size: 32px;
+    letter-spacing: 1.6px;
+  }
+  .feedback__line {
+    margin: 29px auto 42px;
+  }
+}
 
 .form {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 40px 40px;
   padding-top: 40px;
@@ -470,6 +494,45 @@ body {
 }
 .form__button:active {
   color: #843500;
+}
+@media screen and (max-width: 1399px) {
+  .form__item {
+    width: calc(50vw - 64px);
+  }
+  .form__textarea {
+    width: calc(100vw - 32px);
+  }
+}
+@media screen and (max-width: 952px) {
+  .form {
+    gap: 20px 20px;
+    padding-top: 30px;
+  }
+  .form__item {
+    height: 58px;
+    width: calc(50vw - 64px);
+    padding-left: 34px;
+    border: 2px solid #cfcfcd;
+    color: #b0b0b0;
+    background: #fff;
+  }
+  .form__select {
+    padding-left: 24px;
+    background: #292929;
+    color: #fff;
+  }
+  .form__textarea {
+    width: calc(100vw - 32px);
+    height: 198px;
+  }
+  .form__button {
+    margin: -10px 0 0 auto;
+  }
+}
+@media screen and (max-width: 620px) {
+  .form__item {
+    width: 100%;
+  }
 }
 
 /* Styles for footer  */

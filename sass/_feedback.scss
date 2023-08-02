@@ -15,10 +15,32 @@
     height: 6px;
     background: #292929;
   }
+
+  @media screen and (max-width: 1399px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (max-width: 952px) {
+    min-height: 781px;
+    height: max-content;
+    padding: 32px 32px 21px;
+
+    &__title {
+      padding: 6.5px 0;
+      font-size: 32px;
+      letter-spacing: 1.6px;
+    }
+
+    &__line {
+      margin: 29px auto 42px;
+    }
+  }
 }
 
 .form {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 40px 40px;
   padding-top: 40px;
@@ -46,7 +68,7 @@
   }
 
   &__button {
-    align-self:flex-end;
+    align-self: flex-end;
     margin: 3px 0 0 auto;
     height: 45px;
     padding: 11px 0px;
@@ -57,6 +79,52 @@
 
     &:active {
       color: #843500;
+    }
+  }
+
+  @media screen and (max-width: 1399px) {
+    &__item {
+      width: calc(50vw - 64px);
+    }
+
+    &__textarea {
+      width: calc(100vw - 32px);
+    }
+  }
+
+  @media screen and (max-width: 952px) {
+    gap: 20px 20px;
+    padding-top: 30px;
+
+    &__item {
+      height: 58px;
+      // max-width: 434px;
+      width: calc(50vw - 64px);
+      padding-left: 34px;
+      border: 2px solid #cfcfcd;
+      color: #b0b0b0;
+      background: #fff;
+    }
+
+    &__select {
+      padding-left: 24px;
+      background: #292929;
+      color: #fff;
+    }
+
+    &__textarea {
+      width: calc(100vw - 32px);
+      height: 198px;
+    }
+
+    &__button {
+      margin: -10px 0 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    &__item{
+      width: 100%;
     }
   }
 }
