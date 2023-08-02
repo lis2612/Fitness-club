@@ -1,10 +1,11 @@
 .art {
   height: 973px;
+  overflow: hidden;
 
   &__image {
     position: absolute;
     bottom: 0;
-    right:-155px;
+    right: -155px;
     width: 953px;
     height: 596px;
   }
@@ -20,7 +21,7 @@
     position: absolute;
     top: 66px;
     left: 200px;
-    width: 562px;
+    max-width: 562px;
     padding: 335px 15px 46px;
     border: 6px solid #ff8340;
   }
@@ -29,9 +30,12 @@
     margin-top: 14px;
   }
 
-  @media screen and (max-width: 1350px) {
+  @media screen and (max-width: 1399px) {
     &__title {
-      font-size: 5.95vw;
+      font-size: 6vw;
+    }
+    &__image {
+      right: -11.07vw;
     }
   }
 
@@ -48,7 +52,7 @@
       top: 54px;
       left: 32px;
       max-width: 562px;
-      font-size: 60px;
+      font-size: 6.3vw; /* 60px*/
       line-height: 70px;
     }
 
@@ -61,6 +65,12 @@
 
     &__button-more {
       margin-top: 36px;
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    &__title {
+      font-size: 40px;
     }
   }
 }
