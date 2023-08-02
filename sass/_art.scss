@@ -17,6 +17,7 @@
     max-width: 1324px;
     z-index: 1;
   }
+
   &__description {
     position: absolute;
     top: 66px;
@@ -32,11 +33,16 @@
 
   @media screen and (max-width: 1399px) {
     &__title {
-      font-size: 6vw;
+      font-size: 5.7vw;
+      max-width: 94.6vw;
     }
     &__image {
       right: -11.07vw;
     }
+
+    &__title {
+    left: 32px;
+  }
   }
 
   @media screen and (max-width: 952px) {

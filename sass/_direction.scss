@@ -1,0 +1,44 @@
+.direction {
+  height: 491px;
+  background: #292929;
+
+  &__title {
+    height: 160px;
+    padding: 40px 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 34px;
+  }
+
+  @media screen and (max-width: 1399px) {
+    &__title {
+      font-size: 5.7vw;
+    }
+    .container {
+      padding: 0 32px;
+    }
+  }
+
+  @media screen and (max-width: 952px) {
+    height: 357px;
+    &__title {
+      height: 85px;
+      font-size: 6.3vw;
+      padding: 12px 0;
+    }
+    .container {
+      gap: 28px;
+      padding: 0 32px;
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    &__title {
+      font-size: 40px;
+    }
+  }
+}
