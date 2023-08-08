@@ -1,0 +1,102 @@
+.system {
+  display: grid;
+  grid-template-areas:
+    'system system system image '
+    'food time program image ';
+
+  grid-template-columns: 1fr 1fr 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  &__description {
+    grid-area: system;
+    padding: 124px 76px 1px 260px;
+  }
+
+  &__title {
+    margin-bottom: 34px;
+  }
+
+  &__food {
+    grid-area: food;
+  }
+
+  &__time {
+    grid-area: time;
+  }
+
+  &__program {
+    grid-area: program;
+  }
+
+  &__image {
+    grid-area: image;
+  }
+
+  @media screen and (max-width: 1919px) {
+    grid-template-areas:
+      'system system system image image image'
+      'food food time time program program';
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+
+    &__description {
+      padding-left: max(32px, calc((100vw - 1400px) / 2));
+    }
+  }
+
+  @media screen and (max-width: 952px) {
+    grid-template-areas:
+      'system image '
+      'food time'
+      'program program';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+
+    &__title {
+      text-align: center;
+    }
+
+    &__description {
+      padding: 40px 32px 32px;
+    }
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 38px 34px 18px;
+  margin-top: 40px;
+
+  &__title {
+    color: #292929;
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1px;
+  }
+
+  &__description {
+    width: 100%;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 952px) {
+    padding: 38px 38px 58px 34px;
+
+    &__image {
+      margin-bottom: 70px;
+    }
+
+    &__title {
+      margin-bottom: 52px;
+    }
+  }
+}
