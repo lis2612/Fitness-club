@@ -1,0 +1,26 @@
+.couch{
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-top: 140px;
+
+  &__title{
+    padding-left: 260px;
+    margin-bottom: 124px;
+  }
+
+
+  @media screen and (max-width: 1919px) {
+
+
+    &__title {
+      padding-left: max(32px, calc((100vw - 1400px) / 2));
+    }
+  }
+
+  @media screen and (max-width: 952px) {
+    padding-top: 0;
+    &__title{
+      display: none;
+    }
+  }
+}

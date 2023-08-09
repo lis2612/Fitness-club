@@ -628,6 +628,29 @@ body {
   }
 }
 
+.couch {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-top: 140px;
+}
+.couch__title {
+  padding-left: 260px;
+  margin-bottom: 124px;
+}
+@media screen and (max-width: 1919px) {
+  .couch__title {
+    padding-left: max(32px, (100vw - 1400px) / 2);
+  }
+}
+@media screen and (max-width: 952px) {
+  .couch {
+    padding-top: 0;
+  }
+  .couch__title {
+    display: none;
+  }
+}
+
 /* Styles for footer  */
 .footer {
   height: 226px;
