@@ -593,8 +593,7 @@ body {
     padding: 40px 32px 32px;
   }
 }
-
-.card {
+.system .card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -602,7 +601,7 @@ body {
   padding: 38px 34px 18px;
   margin-top: 40px;
 }
-.card__title {
+.system .card__title {
   color: #292929;
   text-align: center;
   font-family: Arial;
@@ -612,18 +611,18 @@ body {
   line-height: normal;
   letter-spacing: 1px;
 }
-.card__description {
+.system .card__description {
   width: 100%;
   text-align: center;
 }
 @media screen and (max-width: 952px) {
-  .card {
+  .system .card {
     padding: 38px 38px 58px 34px;
   }
-  .card__image {
+  .system .card__image {
     margin-bottom: 70px;
   }
-  .card__title {
+  .system .card__title {
     margin-bottom: 52px;
   }
 }
@@ -637,6 +636,29 @@ body {
   padding-left: 260px;
   margin-bottom: 124px;
 }
+.couch__slider {
+  position: relative;
+  width: 100%;
+  height: 920px;
+}
+.couch__slider::before {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 756px;
+  z-index: 5;
+  background: linear-gradient(90deg, #fff 0%, rgba(41, 41, 41, 0) 100%);
+}
+.couch__slider::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 260px;
+  height: 756px;
+  z-index: 5;
+  background: linear-gradient(90deg, rgba(41, 41, 41, 0) 0%, #fff 100%);
+}
 @media screen and (max-width: 1919px) {
   .couch__title {
     padding-left: max(32px, (100vw - 1400px) / 2);
@@ -649,6 +671,32 @@ body {
   .couch__title {
     display: none;
   }
+}
+.couch .card {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 384px;
+  height: 920px;
+}
+.couch .card__image {
+  width: 100%;
+  height: 756px;
+}
+.couch .card__title {
+  line-height: 50px;
+  padding-top: 15px;
+  padding-left: 54px;
+}
+.couch .card__description {
+  display: block;
+  padding-top: 10px;
+  padding-left: 54px;
+}
+.couch .swiper-button-next:after,
+.couch .swiper-button-prev:after {
+  color: #ff8340;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 }
 
 /* Styles for footer  */
