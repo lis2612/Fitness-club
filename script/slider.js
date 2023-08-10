@@ -3,10 +3,14 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 0,
   direction: 'horizontal',
   centerInsufficientSlides: true,
-  loopedSlides:3,
+  loopedSlides: 3,
   loop: true,
   centeredSlides: true,
   centeredSlidesBounds: true,
+  autoplay: {
+    delay: 2000,
+  },
+  pauseOnMouseEnter:true,
 
   // Navigation arrows
   navigation: {
@@ -16,6 +20,9 @@ const swiper = new Swiper('.swiper', {
 
   breakpoints: {
     952: {
+      slidesPerView: 4,
+    },
+    1919: {
       slidesPerView: 5,
     },
   },
