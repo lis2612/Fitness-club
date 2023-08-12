@@ -1,0 +1,29 @@
+.welcome {
+  padding-top: 115px;
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (max-width: 1919px) {
+  &__title {
+    padding-left: max(32px, (100vw - 1400px) / 2);
+  }
+}
+
+  @media screen and (max-width: 952px) {
+    padding-top: 53px;
+
+    &__title {
+      margin-bottom: 24px;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    padding-top: 32px;
+
+    &__title {
+      margin-bottom: 24px;
+    }
+  }
+}
