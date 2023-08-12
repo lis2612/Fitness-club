@@ -73,6 +73,12 @@
     }
   }
 
+  @media screen and (max-width: 1919px) {
+    &__title {
+      padding-left: max(32px, (100vw - 1400px) / 2);
+    }
+  }
+
   @media screen and (max-width: 1220px) {
     &__cards-wrapper {
       height: max-content;
@@ -113,7 +119,7 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      gap:0 15px;
+      gap: 0 15px;
       max-width: 100%;
       width: 100%;
       min-height: 248px;

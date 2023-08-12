@@ -827,6 +827,11 @@ body {
   align-items: center;
   gap: 16px;
 }
+@media screen and (max-width: 1919px) {
+  .price__title {
+    padding-left: max(32px, (100vw - 1400px) / 2);
+  }
+}
 @media screen and (max-width: 1220px) {
   .price__cards-wrapper {
     height: max-content;
@@ -895,6 +900,34 @@ body {
   }
 }
 
+.welcome {
+  padding-top: 115px;
+}
+.welcome__title {
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 1919px) {
+  .welcome__title {
+    padding-left: max(32px, (100vw - 1400px) / 2);
+  }
+}
+@media screen and (max-width: 952px) {
+  .welcome {
+    padding-top: 53px;
+  }
+  .welcome__title {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .welcome {
+    padding-top: 32px;
+  }
+  .welcome__title {
+    margin-bottom: 24px;
+  }
+}
+
 /* Styles for footer  */
 .footer {
   height: 226px;
@@ -904,7 +937,7 @@ body {
 .footer__nav {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 44px;
 }
 .footer__menu {
   justify-content: space-between;
