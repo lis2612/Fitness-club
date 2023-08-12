@@ -768,6 +768,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-height: max-content;
   height: 686px;
 }
 .price__title {
@@ -831,7 +832,6 @@ body {
     height: max-content;
   }
   .price .card {
-    height: max-content;
     padding: 24px;
   }
   .price .card__period {
@@ -842,7 +842,7 @@ body {
     font-size: 34px;
   }
 }
-@media screen and (max-width: 1220px) and (max-width: 952px) {
+@media screen and (max-width: 952px) {
   .price {
     padding: 53px 32px 32px;
   }
@@ -851,7 +851,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    max-height: 992px;
   }
   .price__cards-wrapper:last-child {
     border-bottom: 6px solid #292929;
@@ -863,6 +862,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 0 15px;
     max-width: 100%;
     width: 100%;
     min-height: 248px;
@@ -890,7 +890,7 @@ body {
     text-align: center;
   }
   .price .card__amount {
-    min-width: 230px;
+    min-width: 180px;
     margin-bottom: 0;
   }
 }

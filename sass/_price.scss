@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-height: max-content;
     height: 686px;
   }
 
@@ -78,7 +79,6 @@
     }
 
     .card {
-      height: max-content;
       padding: 24px;
 
       &__period {
@@ -90,66 +90,64 @@
         font-size: 34px;
       }
     }
+  }
+  @media screen and (max-width: 952px) {
+    padding: 53px 32px 32px;
 
-    @media screen and (max-width: 952px) {
-      padding: 53px 32px 32px;
+    &__cards-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
 
-      &__cards-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        max-height: 992px;
-
-        &:last-child {
-          border-bottom: 6px solid #292929;
-        }
+      &:last-child {
+        border-bottom: 6px solid #292929;
       }
+    }
 
-      &__title {
-        margin-bottom: 53px;
-      }
+    &__title {
+      margin-bottom: 53px;
+    }
 
-      .card {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        max-width: 100%;
-        width: 100%;
-        min-height: 248px;
-        height: fit-content;
-        // padding: 0 56px 0 60px;
-        padding: 0 5.9vw 0 6.3vw;
+    .card {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap:0 15px;
+      max-width: 100%;
+      width: 100%;
+      min-height: 248px;
+      height: fit-content;
+      padding: 0 5.9vw 0 6.3vw;
 
-        border: 6px solid #292929;
-        border-bottom: 3px;
+      border: 6px solid #292929;
+      border-bottom: 3px;
 
-        &:hover {
-          height: 248px;
-          border-color: #292929;
-          transition: none;
+      &:hover {
+        height: 248px;
+        border-color: #292929;
+        transition: none;
 
-          .card__length {
-            border: 4px solid #292929;
-            color: #292929;
-          }
-        }
-
-        &__period {
-          margin-bottom: 0;
+        .card__length {
+          border: 4px solid #292929;
           color: #292929;
         }
+      }
 
-        &__description {
-          max-width: 306px;
-          margin-bottom: 0;
-          text-align: center;
-        }
+      &__period {
+        margin-bottom: 0;
+        color: #292929;
+      }
 
-        &__amount {
-          min-width: 230px;
-          margin-bottom: 0;
-        }
+      &__description {
+        max-width: 306px;
+        margin-bottom: 0;
+        text-align: center;
+      }
+
+      &__amount {
+        min-width: 180px;
+        margin-bottom: 0;
       }
     }
   }
