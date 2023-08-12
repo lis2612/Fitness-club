@@ -914,3 +914,11 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (max-width: 720px) {
+  .footer__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+}
