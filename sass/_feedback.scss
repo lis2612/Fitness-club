@@ -58,7 +58,7 @@
     color: #fff;
     appearance: none;
     // background: #292929;
-    background: url('/images/arrow.svg') #292929 no-repeat;
+    background: url('./images/arrow.svg') #292929 no-repeat;
     background-position: right 34px center;
   }
 
@@ -111,7 +111,7 @@
 
     &__select {
       padding-left: 24px;
-      background: url('/images/arrow.svg') #292929 no-repeat;
+      background: url('./images/arrow.svg') #292929 no-repeat;
       background-position: right 24px center;
       color: #fff;
     }
